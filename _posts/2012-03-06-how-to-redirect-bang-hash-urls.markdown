@@ -10,7 +10,7 @@ Sometimes you type a hash-bang URL too fast, bang first.
 
 Consider `https://artsy.net/!#/log_in`. Rails will receive `/!` as the file path, resulting in a 404, File Not Found error. The part of the URL after the hash is a position within the page and is never sent to the web server.
 
-It's actually pretty easy to handle this scenario and redirect to the corresponding hash-bang URL.
+It's actually quite easy to handle this scenario and redirect to the corresponding hash-bang URL.
 
 The most straightforward way is to create a file called `!.html` in your `public` folder and use JavaScript to rewrite the URL with the bang-hash.
 
